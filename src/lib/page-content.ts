@@ -645,11 +645,10 @@ function wizardSteps() {
       <div class="field"><label>WhatsApp</label><input type="tel" name="whatsapp" placeholder="if different" /></div>
       <div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" data-required placeholder="you@email.com" /></div>
     </div>
-    <div class="field-row">
+    <div class="field-row field-row-city">
       <div class="field"><label>State <span class="req">*</span></label><select name="state" data-required><option value="">Select</option><option>Uttar Pradesh</option><option>Bihar</option><option>Delhi-NCR</option><option>Other</option></select></div>
-      <div class="field"><label>City / District <span class="req">*</span></label><input id="f_city" name="city" data-required placeholder="e.g. Lucknow" />
-        <div class="ex-chips">${['Lucknow', 'Kanpur', 'Varanasi', 'Prayagraj', 'Noida/Ghaziabad', 'Gorakhpur', 'Agra', 'Meerut', 'Bareilly', 'Patna', 'Gaya', 'Muzaffarpur', 'Bhagalpur', 'Darbhanga'].map(c => `<span class="ex-chip">${c}</span>`).join('')}</div>
-      </div>
+      <div class="field"><label>City / District <span class="req">*</span></label><input id="f_city" name="city" data-required placeholder="e.g. Lucknow" /></div>
+      <div class="ex-chips">${['Lucknow', 'Kanpur', 'Varanasi', 'Prayagraj', 'Noida/Ghaziabad', 'Gorakhpur', 'Agra', 'Meerut', 'Bareilly', 'Patna', 'Gaya', 'Muzaffarpur', 'Bhagalpur', 'Darbhanga'].map(c => `<span class="ex-chip">${c}</span>`).join('')}</div>
     </div>
     <div class="field"><label>Current Occupation</label><input name="occupation" placeholder="e.g. Student, Shopkeeper, Freelancer" /></div>
     <div class="wiz-nav"><span></span><button class="btn btn-primary" data-wiz="next">Next <i class="fas fa-arrow-right"></i></button></div>
