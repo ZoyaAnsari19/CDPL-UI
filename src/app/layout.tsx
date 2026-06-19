@@ -1,11 +1,53 @@
 import type { Metadata } from "next";
 
+const siteName = "Cinematic Dream";
+const title = "Cinematic Dream — Hindi Heartland's Own Film Industry";
+const description =
+  "Cinematic Dream Pvt Ltd — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home.";
+const shareDescription =
+  "Discover, train, pay and make famous — close to home. A talent-to-screen ecosystem for Uttar Pradesh, Bihar & Delhi-NCR. No Mumbai gamble. Real, credited, paid screen work.";
+const heroImage = "/static/img/hero-set.jpg";
+const heroImageAlt =
+  "Cinematic film set with lights and camera — Cinematic Dream";
+
+function resolveMetadataBase(): URL {
+  const siteUrl =
+    process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : process.env.VERCEL_URL
+        ? `https://${process.env.VERCEL_URL}`
+        : "http://localhost:3000");
+
+  return new URL(siteUrl);
+}
+
 export const metadata: Metadata = {
-  title: "Cinematic Dream — Hindi Heartland's Own Film Industry",
-  description:
-    "Cinematic Dream Pvt Ltd — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home.",
+  metadataBase: resolveMetadataBase(),
+  title,
+  description,
   icons: {
     icon: "/static/favicon.svg",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "/",
+    siteName,
+    title,
+    description: shareDescription,
+    images: [
+      {
+        url: heroImage,
+        alt: heroImageAlt,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: shareDescription,
+    images: [heroImage],
   },
 };
 
