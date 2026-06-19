@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 const siteName = "Cinematic Dream";
 const title = "Cinematic Dream — Hindi Heartland's Own Film Industry";
@@ -49,6 +49,12 @@ export const metadata: Metadata = {
     description: shareDescription,
     images: [heroImage],
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

@@ -22,7 +22,7 @@ const PAGE = `<!DOCTYPE html>
 
 <!-- ============ HEADER ============ -->
 <header class="header" id="header">
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <a href="#top" class="brand">
       <span class="name"><span class="star">&#10022;</span> Cinematic Dream</span>
       <span class="sub hindi">&#2360;&#2367;&#2344;&#2375;&#2350;&#2366; &middot; &#2360;&#2346;&#2344;&#2366;</span>
@@ -37,14 +37,14 @@ const PAGE = `<!DOCTYPE html>
     </div>
     <div class="nav-right">
       <span class="clock mono" id="clock">&mdash;</span>
-      <a href="#apply" class="btn btn-primary">Apply Now <i class="fas fa-arrow-up-right-from-square"></i></a>
-      <button class="burger" id="burger" aria-label="Open menu"><i class="fas fa-bars"></i></button>
+      <a href="#apply" class="btn btn-primary nav-apply"><span class="nav-apply-long">Apply Now</span><span class="nav-apply-short">Apply</span> <i class="fas fa-arrow-up-right-from-square"></i></a>
+      <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i class="fas fa-bars"></i></button>
     </div>
   </nav>
 </header>
 
-<div class="mobile-menu" id="mobileMenu">
-  <button id="mobileClose" style="position:absolute;top:2rem;right:2rem;font-size:1.5rem"><i class="fas fa-xmark"></i></button>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <button class="mobile-close" id="mobileClose" type="button" aria-label="Close menu"><i class="fas fa-xmark"></i></button>
   <a href="#ecosystem">Ecosystem</a>
   <a href="#pillars">Pillars</a>
   <a href="#journey">Journey</a>
@@ -75,7 +75,7 @@ const PAGE = `<!DOCTYPE html>
         <span class="hindi">&#2309;&#2346;&#2344;&#2366; &#2360;&#2346;&#2344;&#2366; &middot; &#2309;&#2346;&#2344;&#2375; &#2328;&#2352; &#2325;&#2375; &#2346;&#2366;&#2360;</span>
       </div>
       <h1 class="serif reveal" data-delay="80">Building the<br /><span class="mg">Hindi heartland's</span><br />own film industry. <span class="gold-text" style="font-size:.7em">&#10022;</span></h1>
-      <p class="lead reveal" data-delay="160" style="font-size:17px">Discover, train, pay and make famous &mdash; <strong style="color:var(--ivory);font-weight:500">close to home.</strong> A branded-house talent-to-screen ecosystem for Uttar Pradesh, Bihar &amp; Delhi&ndash;NCR. No Mumbai gamble. No gatekeepers. Real, credited, paid screen work.</p>
+      <p class="lead reveal" data-delay="160">Discover, train, pay and make famous &mdash; <strong style="color:var(--ivory);font-weight:500">close to home.</strong> A branded-house talent-to-screen ecosystem for Uttar Pradesh, Bihar &amp; Delhi&ndash;NCR. No Mumbai gamble. No gatekeepers. Real, credited, paid screen work.</p>
       <div class="hero-ctas reveal" data-delay="240">
         <a href="#apply" class="btn btn-primary">Apply Now <i class="fas fa-arrow-right"></i></a>
         <a href="#ecosystem" class="btn btn-ghost">Explore the Ecosystem</a>
@@ -627,7 +627,7 @@ function wizardSteps() {
   return `
   <!-- STEP 1 · Personal -->
   <div class="wiz-step active">
-    <div style="display:flex;justify-content:space-between;align-items:center">
+    <div class="wiz-step-head">
       <span class="step-no">STEP 01 &middot; PERSONAL</span>
       <button class="audio-btn" data-say="Let's start with your personal details. Fill your name, contact and city."><i class="fas fa-volume-high"></i> Audio assist</button>
     </div>

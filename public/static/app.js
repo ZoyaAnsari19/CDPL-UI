@@ -71,12 +71,40 @@
   }
 
   /* ---------- 4. MOBILE MENU ---------- */
-  function openMobile(){ var m=document.getElementById('mobileMenu'); if(m) m.classList.add('open'); }
-  function closeMobile(){ var m=document.getElementById('mobileMenu'); if(m) m.classList.remove('open'); }
+  function openMobile() {
+    var m = document.getElementById('mobileMenu');
+    var b = document.getElementById('burger');
+    if (m) {
+      m.classList.add('open');
+      m.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('menu-open');
+    }
+    if (b) b.setAttribute('aria-expanded', 'true');
+  }
+  function closeMobile() {
+    var m = document.getElementById('mobileMenu');
+    var b = document.getElementById('burger');
+    if (m) {
+      m.classList.remove('open');
+      m.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('menu-open');
+    }
+    if (b) b.setAttribute('aria-expanded', 'false');
+  }
   function initMobile() {
-    var b=document.getElementById('burger'); var c=document.getElementById('mobileClose');
-    if(b) b.addEventListener('click', openMobile);
-    if(c) c.addEventListener('click', closeMobile);
+    var b = document.getElementById('burger');
+    var c = document.getElementById('mobileClose');
+    var m = document.getElementById('mobileMenu');
+    if (b) b.addEventListener('click', openMobile);
+    if (c) c.addEventListener('click', closeMobile);
+    if (m) {
+      m.addEventListener('click', function (e) {
+        if (e.target === m) closeMobile();
+      });
+    }
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMobile();
+    });
   }
 
   /* ---------- 5. REVEAL ON SCROLL (stagger) ---------- */
