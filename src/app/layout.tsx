@@ -6,20 +6,29 @@ const description =
   "Cinematic Dream Pvt Ltd — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home.";
 const shareDescription =
   "Discover, train, pay and make famous — close to home. A talent-to-screen ecosystem for Uttar Pradesh, Bihar & Delhi-NCR. No Mumbai gamble. Real, credited, paid screen work.";
-const heroImage = "/static/img/hero-set.jpg";
-const heroImageAlt =
-  "Cinematic film set with lights and camera — Cinematic Dream";
+const shareImage = "/static/img/hero-set.jpg";
+const shareImageAlt =
+  "Cinematic Dream — Building the Hindi heartland's own film industry";
 
 function resolveMetadataBase(): URL {
-  const siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL ??
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL
-      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : process.env.VERCEL_URL
-        ? `https://${process.env.VERCEL_URL}`
-        : "http://localhost:3000");
+  if (process.env.NEXT_PUBLIC_SITE_URL) {
+    return new URL(process.env.NEXT_PUBLIC_SITE_URL);
+  }
 
-  return new URL(siteUrl);
+  if (process.env.VERCEL) {
+    if (
+      process.env.VERCEL_ENV === "production" &&
+      process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ) {
+      return new URL(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`);
+    }
+
+    if (process.env.VERCEL_URL) {
+      return new URL(`https://${process.env.VERCEL_URL}`);
+    }
+  }
+
+  return new URL("http://localhost:3000");
 }
 
 export const metadata: Metadata = {
@@ -38,8 +47,10 @@ export const metadata: Metadata = {
     description: shareDescription,
     images: [
       {
-        url: heroImage,
-        alt: heroImageAlt,
+        url: shareImage,
+        width: 1200,
+        height: 630,
+        alt: shareImageAlt,
       },
     ],
   },
@@ -47,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description: shareDescription,
-    images: [heroImage],
+    images: [shareImage],
   },
 };
 
