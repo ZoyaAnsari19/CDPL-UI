@@ -9,8 +9,8 @@ const PAGE = `<!DOCTYPE html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cinematic Dream — Hindi Heartland's Own Film Industry</title>
-<meta name="description" content="Cinematic Dream Pvt Ltd — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home." />
+<title>Cinematic Dreams — Hindi Heartland's Own Film Industry</title>
+<meta name="description" content="Cinematic Dreams Private Limited — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Inter:wght@300;400;500;600&family=Tiro+Devanagari+Hindi:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -26,8 +26,8 @@ const PAGE = `<!DOCTYPE html>
 <header class="header" id="header">
   <nav class="navbar" aria-label="Main navigation">
     <a href="#top" class="brand">
-      <span class="name"><span class="star">&#10022;</span> Cinematic Dream</span>
-      <span class="sub hindi">&#2360;&#2367;&#2344;&#2375;&#2350;&#2366; &middot; &#2360;&#2346;&#2344;&#2366;</span>
+      <span class="name"><span class="star">&#10022;</span> Cinematic Dreams</span>
+      <span class="sub">Private Limited</span>
     </a>
     <div class="nav-links">
       <a href="#ecosystem">Ecosystem</a>
@@ -344,7 +344,7 @@ const PAGE = `<!DOCTYPE html>
       <div class="mtile m-mid lift"><span class="bp">Anti-migration</span><h4>Jobs that stay home</h4><p>Every local creative livelihood is one fewer distress migrant.</p><i class="fas fa-house-user big"></i></div>
       <div class="mtile m-full lift" style="text-align:center">
         <h4 class="serif" style="font-size:1.5rem">"We don't ask the state for a favour &mdash; we deliver its blueprint."</h4>
-        <p style="max-width:60ch;margin-inline:auto">Film policy, film city, skilling, ODOP and anti-migration are all goals the government already owns. Cinematic Dream is the private engine that executes them in the creative economy.</p>
+        <p style="max-width:60ch;margin-inline:auto">Film policy, film city, skilling, ODOP and anti-migration are all goals the government already owns. Cinematic Dreams is the private engine that executes them in the creative economy.</p>
       </div>
     </div>
   </div>
@@ -364,7 +364,7 @@ const PAGE = `<!DOCTYPE html>
       <aside class="wiz-media" style="background-image:url('/static/img/dancer.jpg')">
         <div class="wm-inner">
           <div>
-            <span class="kicker">Cinematic Dream</span>
+            <span class="kicker">Cinematic Dreams</span>
             <h3 class="serif" style="margin-top:1rem">Apna sapna,<br/>apne ghar ke paas.</h3>
             <p class="wm-hindi">&#2309;&#2346;&#2344;&#2366; &#2360;&#2346;&#2344;&#2366; &middot; &#2309;&#2346;&#2344;&#2375; &#2328;&#2352; &#2325;&#2375; &#2346;&#2366;&#2360;</p>
           </div>
@@ -479,8 +479,9 @@ const PAGE = `<!DOCTYPE html>
 
     <div class="foot-grid">
       <div class="foot-col foot-brand">
-        <div class="name"><span class="star">&#10022;</span> Cinematic Dream</div>
-        <p>A branded-house talent-to-screen ecosystem for UP, Bihar &amp; Delhi&ndash;NCR. Discover &middot; Train &middot; Pay &middot; Make famous.</p>
+        <div class="name"><span class="star">&#10022;</span> Cinematic Dreams</div>
+        <p class="mono" style="font-size:.72rem;color:var(--gold-2);letter-spacing:.08em;margin-top:.35rem">Private Limited</p>
+        <p style="margin-top:1rem">A branded-house talent-to-screen ecosystem for UP, Bihar &amp; Delhi&ndash;NCR. Discover &middot; Train &middot; Pay &middot; Make famous.</p>
         <div class="foot-socials">
           <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -488,7 +489,7 @@ const PAGE = `<!DOCTYPE html>
           <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
         </div>
       </div>
-      <div class="foot-col"><h5>Ecosystem</h5><a href="#pillars">Cinematic Dream</a><a href="#pillars">Kalakar.tv</a><a href="#academy">RKF School of Drama</a><a href="#awards">Creator Awards</a></div>
+      <div class="foot-col"><h5>Ecosystem</h5><a href="#pillars">Cinematic Dreams</a><a href="#pillars">Kalakar.tv</a><a href="#academy">RKF School of Drama</a><a href="#awards">Creator Awards</a></div>
       <div class="foot-col"><h5>Talent Support</h5><a href="#journey">Talent Journey</a><a href="#apply">Apply / Onboard</a><a href="#academy">Auditions</a><a href="#impact">Impact</a></div>
       <div class="foot-col"><h5>Platform</h5><a href="#ecosystem">The Story</a><a href="#impact">Market &amp; Data</a><a href="#academy">Fees &amp; Tracks</a><a href="#top">Back to top</a></div>
     </div>
@@ -500,7 +501,7 @@ const PAGE = `<!DOCTYPE html>
 
     <div class="foot-legal">
       <div>
-        <div>&copy; 2026 Cinematic Dream Pvt Ltd &middot; HQ: <span class="gold-text">Lucknow &middot; Uttar Pradesh</span></div>
+        <div>&copy; 2026 Cinematic Dreams Private Limited &middot; HQ: <span class="gold-text">Lucknow &middot; Uttar Pradesh</span></div>
         <div style="margin-top:.4rem">Helpline: <span class="gold-text">1800-CINEMA</span> &middot; <a href="mailto:hello@cinematicdream.in" style="color:var(--gold-2)">hello@cinematicdream.in</a></div>
       </div>
       <div style="text-align:right">
@@ -543,7 +544,7 @@ function dialectMarquee() {
 
 function pillarCards() {
   const items = [
-    { n: 'Pillar 01', i: 'fa-film', t: 'Cinematic Dream', r: 'Production House', d: 'Dialect-first films, series, music & IP. The content engine that builds credibility and a hometown library.' },
+    { n: 'Pillar 01', i: 'fa-film', t: 'Cinematic Dreams', r: 'Production House', d: 'Dialect-first films, series, music & IP. The content engine that builds credibility and a hometown library.' },
     { n: 'Pillar 02', i: 'fa-tv', t: 'Kalakar.tv', r: 'OTT · YouTube · Music', d: 'Distribution to millions. Where heartland content reaches the heartland audience &mdash; and monetises.' },
     { n: 'Pillar 03', i: 'fa-graduation-cap', t: 'RKF School of Drama', r: 'Academy · Lucknow + Online', d: 'On-site Lucknow campus & online courses. The cash engine that funds the whole ecosystem.' },
     { n: 'Pillar 04', i: 'fa-award', t: 'Creator Awards', r: 'PR & Recognition', d: 'Kalakar.tv Creator Awards turn graduates into recognised local stars &mdash; the marketing flywheel.' },
@@ -583,7 +584,7 @@ function flywheelNodes() {
 
 function journeyPanels() {
   const steps = [
-    { n: '01', img: 'street.jpg', t: 'Discovery', d: 'Upload a clip on the Cinematic Dream app. Our AI shortlist surfaces raw talent from every district &mdash; no contacts, no queue.', m: ['App-based upload', 'AI-assisted shortlisting', 'Open to all districts'] },
+    { n: '01', img: 'street.jpg', t: 'Discovery', d: 'Upload a clip on the Cinematic Dreams app. Our AI shortlist surfaces raw talent from every district &mdash; no contacts, no queue.', m: ['App-based upload', 'AI-assisted shortlisting', 'Open to all districts'] },
     { n: '02', img: 'actor.jpg', t: 'Audition', d: 'A filmed, professional audition &mdash; not a corridor cattle-call. Real exposure, recorded, and yours to keep.', m: ['Filmed audition clip', 'Professional panel', 'Instant exposure'] },
     { n: '03', img: 'singer.jpg', t: 'Training', d: 'An RKF School course builds your craft and a portfolio. Skills you keep for life, regardless of any outcome.', m: ['RKF certified course', 'Portfolio you own', 'Lifelong skills'] },
     { n: '04', img: 'hero-set.jpg', t: 'Production', d: 'Step onto a real set in a real, credited, paid role &mdash; the output that years in Mumbai could never deliver.', m: ['Real credited role', 'Paid screen work', 'On-set experience'] },
@@ -712,7 +713,7 @@ function wizardSteps() {
     <h4 class="serif">Almost there</h4>
     <div class="field"><label>Preferred audition slot / availability</label><input name="slot" placeholder="e.g. Weekends, evenings, specific dates" /></div>
     <label class="check"><input type="checkbox" name="feesUnderstood" data-required /><span>I understand registration &amp; portfolio fees are <strong style="color:var(--gold-2)">optional</strong> and do <strong style="color:var(--gold-2)">NOT</strong> affect my selection.</span></label>
-    <label class="check"><input type="checkbox" name="consent" data-required /><span>I consent to Cinematic Dream contacting me &amp; processing my application data.</span></label>
+    <label class="check"><input type="checkbox" name="consent" data-required /><span>I consent to Cinematic Dreams contacting me &amp; processing my application data.</span></label>
     <div class="guardian" id="guardianBlock">
       <div class="hairline left"></div>
       <p class="mono" style="font-size:.72rem;color:var(--crimson);letter-spacing:.1em">APPLICANT UNDER 18 &mdash; GUARDIAN DETAILS REQUIRED</p>
@@ -730,7 +731,7 @@ function wizardSteps() {
       <div class="tick"><i class="fas fa-check"></i></div>
       <span class="step-no" style="margin:0">APPLICATION RECEIVED</span>
       <h4 class="serif" style="margin-block:.6rem">Aapka safar shuru ho gaya!</h4>
-      <p class="lead center" style="margin-inline:auto">Hamari team aapse jaldi sampark karegi. Your application is in &mdash; welcome to the Cinematic Dream family.</p>
+      <p class="lead center" style="margin-inline:auto">Hamari team aapse jaldi sampark karegi. Your application is in &mdash; welcome to the Cinematic Dreams family.</p>
       <div class="ref-id">Ref: <span id="refId">CD-2026-XXXXX</span><button id="copyRef" title="Copy"><i class="far fa-copy"></i></button></div>
       <p class="muted" style="font-size:.78rem;margin-top:1.5rem">Save this reference ID. No payment was required to apply.</p>
     </div>
@@ -796,7 +797,7 @@ function faqItems() {
     ['What do I actually get from training?', 'A certified RKF course, a real portfolio and a showreel that are yours forever &mdash; transferable skills that hold value regardless of any single outcome.'],
     ['Will I get paid?', 'Production roles are real, credited and paid. Distribution on Kalakar.tv and YouTube, plus agency representation, open continuing earning opportunities.'],
     ['Which languages and dialects are supported?', 'Hindi plus Bhojpuri, Awadhi, Braj, Bundeli, Haryanvi, Maithili and more. Dialect-native talent is a strength here, not a weakness.'],
-    ['Is Cinematic Dream government-backed?', 'We are a private ecosystem that aligns with state goals &mdash; UP film policy, the Noida film city, skilling missions, ODOP and anti-migration &mdash; delivering them through the creative economy.'],
+    ['Is Cinematic Dreams government-backed?', 'We are a private ecosystem that aligns with state goals &mdash; UP film policy, the Noida film city, skilling missions, ODOP and anti-migration &mdash; delivering them through the creative economy.'],
   ]
   return qs.map(q => `
     <details class="faq-item">

@@ -1,14 +1,14 @@
 import type { Metadata, Viewport } from "next";
 
-const siteName = "Cinematic Dream";
-const title = "Cinematic Dream — Hindi Heartland's Own Film Industry";
+const siteName = "Cinematic Dreams";
+const title = "Cinematic Dreams — Hindi Heartland's Own Film Industry";
 const description =
-  "Cinematic Dream Pvt Ltd — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home.";
+  "Cinematic Dreams Private Limited — a talent-to-screen ecosystem for India's Hindi heartland (UP · Bihar · Delhi-NCR). Discover, train, pay and make famous — close to home.";
 const shareDescription =
   "Discover, train, pay and make famous — close to home. A talent-to-screen ecosystem for Uttar Pradesh, Bihar & Delhi-NCR. No Mumbai gamble. Real, credited, paid screen work.";
 const shareImage = "/static/img/hero-set.jpg";
 const shareImageAlt =
-  "Cinematic Dream — Building the Hindi heartland's own film industry";
+  "Cinematic Dreams — Building the Hindi heartland's own film industry";
 
 function resolveMetadataBase(): URL {
   if (process.env.NEXT_PUBLIC_SITE_URL) {
